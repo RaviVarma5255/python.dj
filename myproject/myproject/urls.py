@@ -18,9 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from basic.views import home
 from basic.views import add
+from basic.views import health
+from basic.views import cal
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('first/',home),
-    path('second/',add)
+    path('second/',add),
+    path('third/',health),
+    path("4/",cal)
 ]

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-mg*w2n9uf&msl(q+3m=z5mt%nf7#yf2psqmi00h(68e*hndao=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['smapledjango-app.onrender.com']
+ALLOWED_HOSTS = ['smapledjango-app.onrender.com','https://smapledjango-app.onrender.com','127.0.0.1']
 
 
 # Application definition
@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'siva',
+        'USER':'root',
+        'PASSWORD':'5255ravi',
+        'HOST':'127.0.0.1',
+        'PORT':'3306',
     }
 }
 
