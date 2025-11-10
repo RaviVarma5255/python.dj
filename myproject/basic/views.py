@@ -45,3 +45,7 @@ def info(request):
     return HttpResponse(data)
 
 # ?name=varma&age=22 website lo ila access cheysukovali 
+
+def eww(requests):
+    a='avutadi antava'
+    return JsonResponse (f'hello {a}')

@@ -21,6 +21,7 @@ from basic.views import add
 from basic.views import health
 from basic.views import cal
 from basic.views import info
+from basic.views import eww
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,5 +29,6 @@ urlpatterns = [
     path('second/',add),
     path('third/',health),
     path("4/",cal),
-    path("siva/",info)
+    path("siva/",info),
+    path("subba/",eww)
 ]
