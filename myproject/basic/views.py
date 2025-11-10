@@ -31,3 +31,17 @@ def cal(request):
     b='varma'
     c=a+b
     return HttpResponse(f"{c} is the name of me")
+
+
+# next query parames ani vuntai avvi chudam
+# qp :- antey :- thses r used to send extra information to d server without creating a new route
+
+#  how to access it in jango
+
+def info(request):
+    name = request.GET.get('name','ravi') # :- ikada ravi annedi defalut value
+    age = request.GET.get('age',0) #:- same 0 kuda defalut value
+    data = {f'hello {name} , what your age , it was {age} mam'}
+    return HttpResponse(data)
+
+# ?name=varma&age=22 website lo ila access cheysukovali 

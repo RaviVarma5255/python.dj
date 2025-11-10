@@ -20,11 +20,13 @@ from basic.views import home
 from basic.views import add
 from basic.views import health
 from basic.views import cal
+from basic.views import info
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('first/',home),
     path('second/',add),
     path('third/',health),
-    path("4/",cal)
+    path("4/",cal),
+    path("siva/",info)
 ]
