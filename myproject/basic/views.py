@@ -49,3 +49,7 @@ def info(request):
 def eww(requests):
     a='avutadi antava'
     return JsonResponse (f'hello {a}')
+
+def hh(requsts):
+    b='ok'
+    return HttpResponse (f"hello {b}")
