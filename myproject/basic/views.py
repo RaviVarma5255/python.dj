@@ -60,3 +60,9 @@ def name(request):
     ages = 22
 
     return HttpResponse(f"i am {names} and my age is {ages}")
+
+def funs(request):
+    a='siva'
+    c='varma'
+    return HttpResponse(f"this is {c,a}")
+
