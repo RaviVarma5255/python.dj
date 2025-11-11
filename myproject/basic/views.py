@@ -53,3 +53,10 @@ def eww(requests):
 def hh(requsts):
     b='ok'
     return HttpResponse (f"hello {b}")
+
+
+def name(request):
+    names = 'ravi'
+    ages = 22
+
+    return HttpResponse(f"i am {names} and my age is {ages}")
