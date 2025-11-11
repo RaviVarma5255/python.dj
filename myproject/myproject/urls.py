@@ -23,9 +23,6 @@ from basic.views import cal
 from basic.views import info
 from basic.views import eww
 from basic.views import hh
-from basic.views import name
-from basic.views import names
-
 from basic.views import varma
 
 
@@ -39,8 +36,6 @@ urlpatterns = [
     path("siva/",info),
     path("subba/",eww),
     path("ravi/",hh),
-    path("hi/",name),
-    path("danjo/",names),
     path('hello/',varma)
 
 ]
