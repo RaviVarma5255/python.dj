@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import JsonResponse
 from django.db import connection
+import json
+from django.views.decorators.csrf import csrf_exempt
+from basic.models import students
 
 def home(request):
     return HttpResponse("hello world !")
@@ -73,4 +76,20 @@ def names(request):
 
 def varma(requests):
     return HttpResponse("ok vachindi")
+
+@csrf_exempt
+def addstudent(requests):
+    print(requests.method)
+    if requests.method=="POST":
+        data=json.loads(requests.body)
+        student=students.objects.create(
+            name=data.get("name"),
+            age=data.get("age"),
+            email=data.get("email")
+        )
+        return JsonResponse({"status":"success","id":student.id},status=200)
+    return JsonResponse({"error":"use post method"},status=400)
+
+
+
 

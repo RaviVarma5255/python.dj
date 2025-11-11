@@ -23,7 +23,7 @@ from basic.views import cal
 from basic.views import info
 from basic.views import eww
 from basic.views import hh
-from basic.views import varma
+from basic.views import varma,addstudent
 
 
 
@@ -36,6 +36,7 @@ urlpatterns = [
     path("siva/",info),
     path("subba/",eww),
     path("ravi/",hh),
-    path('hello/',varma)
+    path('hello/',varma),
+    path("add/",addstudent)
 
 ]

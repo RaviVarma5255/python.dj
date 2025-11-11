@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-mg*w2n9uf&msl(q+3m=z5mt%nf7#yf2psqmi00h(68e*hndao=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['smapledjango-app.onrender.com','https://smapledjango-app.onrender.com','127.0.0.1','https://smapledjango-app.onrender.com']
+ALLOWED_HOSTS = ['smapledjango-app.onrender.com','https://smapledjango-app.onrender.com','127.0.0.1',]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'basic'
 ]
 
 MIDDLEWARE = [
