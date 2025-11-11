@@ -25,6 +25,10 @@ from basic.views import eww
 from basic.views import hh
 from basic.views import name
 from basic.views import names
+from basic.views import homes
+
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('first/',home),
@@ -35,5 +39,6 @@ urlpatterns = [
     path("subba/",eww),
     path("ravi/",hh),
     path("hi/",name),
-    path("danjo/",names)
+    path("danjo/",names),
+    path("ok/",homes)
 ]

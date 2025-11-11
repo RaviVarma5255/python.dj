@@ -66,3 +66,8 @@ def funs(request):
     c='varma'
     return HttpResponse(f"this is {c,a}")
 
+
+def names(request):
+    return HttpResponse("Hello")
+
+
