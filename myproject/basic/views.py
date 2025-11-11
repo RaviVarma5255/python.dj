@@ -71,3 +71,6 @@ def names(request):
     return HttpResponse("Hello")
 
 
+def varma(requests):
+    return HttpResponse("ok vachindi")
+

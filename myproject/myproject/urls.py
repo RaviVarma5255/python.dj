@@ -25,7 +25,8 @@ from basic.views import eww
 from basic.views import hh
 from basic.views import name
 from basic.views import names
-from basic.views import homes
+
+from basic.views import varma
 
 
 
@@ -40,5 +41,6 @@ urlpatterns = [
     path("ravi/",hh),
     path("hi/",name),
     path("danjo/",names),
-    path("ok/",homes)
+    path('hello/',varma)
+
 ]
